@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/hepnames
+# catalog-date 2008-08-21 09:38:31 +0200
+# catalog-license lppl
+# catalog-version 1.4
 Name:		texlive-hepnames
 Version:	1.4
 Release:	1
@@ -56,6 +62,7 @@ main non-resonant particle names from heppennames with more
 %doc %{_texmfdistdir}/doc/latex/hepnames/heppennames-macros.tex
 %doc %{_texmfdistdir}/doc/latex/hepnames/heppennames.pdf
 %doc %{_texmfdistdir}/doc/latex/hepnames/heppennames.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +73,5 @@ main non-resonant particle names from heppennames with more
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
