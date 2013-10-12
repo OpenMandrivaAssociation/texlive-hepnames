@@ -1,12 +1,12 @@
-# revision 15878
+# revision 31856
 # category Package
 # catalog-ctan /macros/latex/contrib/hepnames
-# catalog-date 2008-08-21 09:38:31 +0200
+# catalog-date 2013-10-07 18:28:42 +0200
 # catalog-license lppl
-# catalog-version 1.4
+# catalog-version 1.7
 Name:		texlive-hepnames
-Version:	1.4
-Release:	2
+Version:	1.7
+Release:	1
 Summary:	Pre-defined high energy particle names
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hepnames
@@ -44,15 +44,21 @@ main non-resonant particle names from heppennames with more
 %{_texmfdistdir}/tex/latex/hepnames/hepnicenames.sty
 %{_texmfdistdir}/tex/latex/hepnames/heppennames.sty
 %doc %{_texmfdistdir}/doc/latex/hepnames/ChangeLog
+%doc %{_texmfdistdir}/doc/latex/hepnames/Makefile
 %doc %{_texmfdistdir}/doc/latex/hepnames/README
 %doc %{_texmfdistdir}/doc/latex/hepnames/hepnames.pdf
 %doc %{_texmfdistdir}/doc/latex/hepnames/hepnames.tex
+%doc %{_texmfdistdir}/doc/latex/hepnames/hepnicenames-it.pdf
+%doc %{_texmfdistdir}/doc/latex/hepnames/hepnicenames-it.tex
 %doc %{_texmfdistdir}/doc/latex/hepnames/hepnicenames-macros.tex
-%doc %{_texmfdistdir}/doc/latex/hepnames/hepnicenames.pdf
-%doc %{_texmfdistdir}/doc/latex/hepnames/hepnicenames.tex
+%doc %{_texmfdistdir}/doc/latex/hepnames/hepnicenames-rm.pdf
+%doc %{_texmfdistdir}/doc/latex/hepnames/hepnicenames-rm.tex
+%doc %{_texmfdistdir}/doc/latex/hepnames/heppennames-it.pdf
+%doc %{_texmfdistdir}/doc/latex/hepnames/heppennames-it.tex
 %doc %{_texmfdistdir}/doc/latex/hepnames/heppennames-macros.tex
-%doc %{_texmfdistdir}/doc/latex/hepnames/heppennames.pdf
-%doc %{_texmfdistdir}/doc/latex/hepnames/heppennames.tex
+%doc %{_texmfdistdir}/doc/latex/hepnames/heppennames-rm.pdf
+%doc %{_texmfdistdir}/doc/latex/hepnames/heppennames-rm.tex
+%doc %{_texmfdistdir}/doc/latex/hepnames/mkmacrotables
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,17 +69,3 @@ main non-resonant particle names from heppennames with more
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4-2
-+ Revision: 752540
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.4-1
-+ Revision: 718609
-- texlive-hepnames
-- texlive-hepnames
-- texlive-hepnames
-- texlive-hepnames
-
