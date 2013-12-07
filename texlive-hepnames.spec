@@ -6,7 +6,7 @@
 # catalog-version 1.7
 Name:		texlive-hepnames
 Version:	1.7
-Release:	2
+Release:	3
 Summary:	Pre-defined high energy particle names
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hepnames
