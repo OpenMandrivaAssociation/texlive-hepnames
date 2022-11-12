@@ -1,18 +1,12 @@
-# revision 31856
-# category Package
-# catalog-ctan /macros/latex/contrib/hepnames
-# catalog-date 2013-10-07 18:28:42 +0200
-# catalog-license lppl
-# catalog-version 1.7
 Name:		texlive-hepnames
-Version:	2.0
-Release:	3
+Version:	35722
+Release:	1
 Summary:	Pre-defined high energy particle names
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hepnames
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hepnames.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hepnames.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hepnames.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hepnames.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ main non-resonant particle names from heppennames with more
 "friendly" names.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -62,7 +56,7 @@ main non-resonant particle names from heppennames with more
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
