@@ -1,6 +1,6 @@
 Name:		texlive-hepnames
 Version:	35722
-Release:	1
+Release:	2
 Summary:	Pre-defined high energy particle names
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hepnames
