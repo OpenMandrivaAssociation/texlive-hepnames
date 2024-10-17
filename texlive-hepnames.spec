@@ -3,7 +3,7 @@ Version:	35722
 Release:	2
 Summary:	Pre-defined high energy particle names
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hepnames
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/hepnames
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hepnames.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hepnames.doc.r%{version}.tar.xz
